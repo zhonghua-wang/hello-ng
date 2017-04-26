@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {JsWidgetsComponent} from "./js-widgets/js-widgets.component";
-import {TinymceComponent} from "./tinymce/tinymce/tinymce.component";
+
+import {TinymcePageComponent} from "./tinymce/tinymce-page/tinymce-page.component";
+import {JsmePageComponent} from "./jsme/jsme-page/jsme-page.component";
 
 const routes: Routes = [
   {
@@ -10,7 +12,16 @@ const routes: Routes = [
     children: [
       {
         path: 'tinymce',
-        component: TinymceComponent
+        component: TinymcePageComponent
+      },
+      {
+        path: 'jsme',
+        component: JsmePageComponent
+      },
+      {
+        path: '',
+        redirectTo: 'tinymce',
+        pathMatch: 'full'
       }
     ]
   }

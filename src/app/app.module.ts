@@ -10,6 +10,7 @@ import {ImportMdModule} from "./import-md/import-md.module";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeModule} from "./home/home.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HomeModule} from "./home/home.module";
     BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
-    ImportMdModule
+    ImportMdModule,
+    FlexLayoutModule
 
   ],
   providers: [],

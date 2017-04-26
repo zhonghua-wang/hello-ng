@@ -1,12 +1,34 @@
-<md-sidenav-container class="side-menu-container mat-elevation-z6 mat-sidenav-shown">
-  <md-sidenav opened="true" mode="side" class="side-menu mat-sidenav">
-    <nav>
-      <h3>Sum menu</h3>
-      <md-menu>
-        <button md-menu-item>
-          <span>TinyMCE</span>
-        </button>
-      </md-menu>
-    </nav>
-  </md-sidenav>
-</md-sidenav-container>
+  <md-sidenav-container class="sidenav-container">
+    <md-sidenav class="sidenav-menu mat-elevation-z6" opened="true" mode="side">
+      <nav>
+        <h3>Sorts of </h3>
+        <ul>
+          <li>
+            <a routerLink="tinymce">TinyMCE</a>
+          </li>
+          <li>
+            <a routerLink="jsme"> JSME </a>
+          </li>
+        </ul>
+      </nav>
+    </md-sidenav>
+    <div class="sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+  </md-sidenav-container>
+
+
+<!--<div>-->
+  <!--<md-sidenav-container class="side-menu-container mat-sidenav-container">-->
+    <!--<md-sidenav opened="true" mode="side" class="mat-sidenav">-->
+      <!--<nav>-->
+        <!--<h3>Sum menu</h3>-->
+        <!--<a>TinyMCE</a>-->
+      <!--</nav>-->
+    <!--</md-sidenav>-->
+    <!--<div class="mat-sidenav-container main-content">-->
+    <!--jjjj-->
+    <!--&lt;!&ndash;<router-outlet></router-outlet>&ndash;&gt;-->
+    <!--</div>-->
+  <!--</md-sidenav-container>-->
+<!--</div>-->

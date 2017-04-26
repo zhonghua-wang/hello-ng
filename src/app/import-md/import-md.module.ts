@@ -14,7 +14,7 @@ import {
     MdSidenavModule,
     MdGridListModule,
     MdTooltipModule,
-    MdButtonToggleModule,
+    MdButtonToggleModule
 
   ],
   exports:[
