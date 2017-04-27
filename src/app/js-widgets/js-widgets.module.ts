@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {APP_BASE_HREF, CommonModule} from '@angular/common';
 
 import { JsWidgetsRoutingModule } from './js-widgets-routing.module';
 import { JsWidgetsComponent } from './js-widgets/js-widgets.component';
