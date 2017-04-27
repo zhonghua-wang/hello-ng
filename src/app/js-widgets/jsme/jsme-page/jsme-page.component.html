@@ -1,2 +1,10 @@
 <h3>JSME Demo</h3>
-<app-jsme id="'jsme-demo-id'"></app-jsme>
+<app-jsme
+  [elementId]="'jsme-demo-id'"
+  #applet
+  [width]="400" [height]="300"
+>
+</app-jsme>
+<md-input-container class="row">
+  <textarea disabled mdInput placeholder="molecule string">{{applet.smiles}}</textarea>
+</md-input-container>

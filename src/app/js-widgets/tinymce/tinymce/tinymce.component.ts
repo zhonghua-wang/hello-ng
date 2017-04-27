@@ -20,7 +20,7 @@ import 'tinymce/plugins/paste';
 })
 export class TinymceComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  @Input() elementId: string = 'jsme-demo-id';
+  @Input() elementId: string;
   @Input() height: number = 300;
   @Output() OnEditorKeyup = new EventEmitter<any>();
 
