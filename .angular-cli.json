@@ -30,7 +30,9 @@
         "../node_modules/tinymce/tinymce.js",
         "../node_modules/tinymce/plugins/link/plugin.js",
         "../node_modules/tinymce/plugins/paste/plugin.js",
-        "../node_modules/tinymce/plugins/table/plugin.js"
+        "../node_modules/tinymce/plugins/table/plugin.js",
+        "../node_modules/cytoscape/dist/cytoscape.js",
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

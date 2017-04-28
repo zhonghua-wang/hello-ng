@@ -15,6 +15,7 @@ export class JsmeComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() height: number = 340;
   @Input() molString: string;
   @Input() showDemo: boolean = true;
+  @Input() option: string;
 
   applet;
   smiles: string;
@@ -23,7 +24,7 @@ export class JsmeComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit() {
-
+    console.log('JSME Page init ...')
   }
 
   readMolString(molString: String){
@@ -31,11 +32,12 @@ export class JsmeComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
+    console.log('JSME init...');
     this.applet = new JSApplet.JSME(
       this.elementId,
       this.width.toString() + 'px',
       this.height.toString() + 'px', {
-      options: "query, hydrogens"
+      options: this.option
     });
     if (this.showDemo){
       this.readMolString(this._demoSmiles);

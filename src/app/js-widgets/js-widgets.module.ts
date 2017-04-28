@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {APP_BASE_HREF, CommonModule} from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 import { JsWidgetsRoutingModule } from './js-widgets-routing.module';
 import { JsWidgetsComponent } from './js-widgets/js-widgets.component';
@@ -8,6 +8,7 @@ import {ImportMdModule} from "../import-md/import-md.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { JsmeComponent } from './jsme/jsme.component';
 import {JsmePageComponent} from "./jsme/jsme-page/jsme-page.component";
+import {CytoscapeModule} from "./cytoscape/cytoscape.module";
 
 
 @NgModule({
@@ -16,8 +17,13 @@ import {JsmePageComponent} from "./jsme/jsme-page/jsme-page.component";
     ImportMdModule,
     FlexLayoutModule,
     JsWidgetsRoutingModule,
-    TinymceModule
+    TinymceModule,
+    CytoscapeModule,
   ],
-  declarations: [JsWidgetsComponent, JsmeComponent, JsmePageComponent]
+  declarations: [
+    JsWidgetsComponent,
+    JsmeComponent,
+    JsmePageComponent,
+    ]
 })
 export class JsWidgetsModule { }
